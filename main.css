@@ -1,0 +1,149 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #ffc600;
+  font-family: Arial, sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  position: relative;
+}
+
+.words, .faq {
+  max-width: 500px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+  padding: 1rem 2rem 1rem 5rem;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+  background-size: 100% 3rem;
+  position: relative;
+  line-height: 3rem;
+}
+
+p {
+  margin: 0 0 3rem;
+}
+
+.words:before, .faq:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  top: 0;
+  left: 30px;
+  bottom: 0;
+  border: 1px solid;
+  border-color: transparent #efe4e4;
+}
+
+.wrap {
+  position: relative;
+  top: 0;
+  transition: all 1s;
+}
+
+.faq {
+  max-width: 100%;
+  margin-top: 5px;
+}
+
+.ya {
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  left: 8px;
+  padding: 5px;
+  text-align: center;
+  background-color: #000;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.ya a {
+  text-decoration: none;
+  color: #ffc600;
+  transition: color .5s;
+}
+
+.ya a:hover {
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  text-align: center;
+  align-content: center;
+  background-color: rgba(0,0,0, .8);
+  z-index: 2;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.overlay a, .overlay h1 {
+  flex: 1 1 100%;
+  color: white;
+}
+
+.enter {
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.enter:hover {
+  color: #ffc600;
+}
+
+@media screen and (max-width: 400px) {
+  .faq {
+    padding-left: 3rem;
+  }
+
+  .faq:before {
+    left: 20px;
+  }
+}
+
+.page_home { 
+  position: fixed; 
+  top: -50px; left: 0; 
+  right: 0; 
+  text-align: center; 
+  height: 70px; 
+  -webkit-transition: all .3s; 
+  -o-transition: all .3s; 
+  transition: all .3s; z-index: 99; 
+}
+
+.page_home:hover { 
+  background-color: rgba(0,0,0,.5); 
+  height: 50px; top: 0; 
+}
+
+.page_home_link { 
+  color: #000; 
+  font-size: 30px; 
+  font-family: Arial, sans-serif; 
+  text-decoration: none; 
+  line-height: 50px; 
+  width: 100%; 
+  font-weight: bold; 
+  display: inline-block; 
+  vertical-align: top; 
+  text-transform: uppercase; 
+  text-shadow: 1px 1px 2px #fff 
+}
+
